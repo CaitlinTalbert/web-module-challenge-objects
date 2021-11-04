@@ -63,7 +63,7 @@ const burger = {
   } 
 }
 
-console.log(burger.discount("teacher", "student", "public")); 
+console.log(burger.discount("teacher")); 
 
 
 ///////////////Reviews (MVP)///////////////////
@@ -82,7 +82,11 @@ const reviews = [
 Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
-
+ for(let i = 0; i < reviews.length; i++) {
+   if(reviews[i].name === 'Julius') {
+     console.log(reviews[i].feedback);
+   }
+ }
 
 
 
